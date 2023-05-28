@@ -74,12 +74,71 @@ switch (number){
     console.log('I am 50 or 40')
     break;
     default:
-    console.log('I dont know')
-
-
+    console.log('I dont know');
+    
 }
+// function is different from loop. function can be called numerous time where it is required and show the result.
+function okk(){
+    console.log('');
+}
+//  advance function
 
+function doubleIt(number){
+    var result = number*2;
+    console.log(result);
+}
+// example-
 
+function doubleIt(number){
+    var result = number*2;
+    return result;  
+}
+var first = doubleIt(10);
+var second = doubleIt(20);
+var total = first + second;
+console.log(first, second, total);
 
+function add(num1, num2){
+    var result = num1 + num2;
+    return result;
+}
+var sum = add(30, 50);
+console.log(sum);
+
+// object module -11
+// rules of declare
+
+var student1 = {id:122, reg:4537, phone:24544657};
+var student2 = {id:123, reg:4538, phone:56456837};
+// find any property of an object
+//In 3 ways it can be identified
+
+1
+var idNo = student1.id;
+console.log(idNo);
+2
+var idNo = student1["id"];
+console.log(idNo);
+3
+findId ="id";
+var idNo = student1[findId];
+console.log(idNo);
+
+// to change a property of object(in 3 ways)
+
+student1.id = 125;
+console.log(student1.id);
+
+student1["id"] = 126;
+console.log(student1.id);
+
+var changeId = "id";
+student1["id"] = 127;
+console.log(student1.id);
+
+// to add new property
+
+student1.name = "Rina";
+console.log(student1);
 
 
